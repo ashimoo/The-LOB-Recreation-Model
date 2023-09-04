@@ -69,6 +69,7 @@ def main():
                 label_predictions_ls = np.mean(label_predictions_ls,axis=1)
                 label_real_ls = np.mean(label_real_ls,axis=1)
                 delta = np.mean(abs(label_real_ls - label_predictions_ls), axis=1)
+            '''the r squared is evaluated on the linear fit between model results and labels, as in Blanchet17'''
             slope, intercept, r_value, p_value, std_err = scipy.stats.linregress(label_predictions_ls.reshape(-1), label_real_ls.reshape(-1))
             print('R_squared value for {} side prediction is {}'.format(side,r_value**2))
             r_list.append(r_value**2)
