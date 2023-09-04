@@ -1,5 +1,5 @@
 # The-LOB-Recreation-Model
-The repo for the LOB Recreation Model that predicts deep level volume in the LOB from TAQ data, described in the paper [PKDD21](https://arxiv.org/pdf/2107.00534.pdf) [AAAI20](https://ojs.aaai.org/index.php/AAAI/article/view/16133). Please note the difference in results between chronological and non-chronological training. There might be minor deviations between the paper and the implementation released that do not effectively influence the conclusions.
+The repo for the LOB Recreation Model that predicts deep level volume in the LOB from TAQ data, described in the paper [PKDD21](https://arxiv.org/pdf/2107.00534.pdf) [AAAI21](https://ojs.aaai.org/index.php/AAAI/article/view/16133). Please note the difference in results between chronological and non-chronological training. There might be minor deviations between the paper and the implementation released that do not effectively influence the conclusions.
 
 Please cite:
 ```
