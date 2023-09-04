@@ -12,8 +12,8 @@ lob.set_index('20',drop=True,inplace=True)
 lob_.set_index(lob.index,inplace=True)
 lob.iloc[:,list(range(1,21,2))] = (lob.iloc[:,list(range(1,21,2))] - lob_.iloc[:,list(range(1,21,2))]).abs()
 lob = lob[(lob.index>46800)&(lob.index<54000)]
-lob.iloc[:,[0,2,4,6,8,10,12,14,16,18]] = lob.iloc[:,[0,2,4,6,8,10,12,14,16,18]] / 100
-lob.iloc[:,[3,7,11,15,19]] = -lob.iloc[:,[3,7,11,15,19]]
+lob.iloc[:,list(range(0,20,2))] = lob.iloc[:,list(range(0,20,2))] / 100
+lob.iloc[:,list(range(3,23,4))] = -lob.iloc[:,list(range(3,23,4))]
 col_names = np.arange(start=lob.iloc[:,18].min(),stop=lob.iloc[:,16].max(),step=1)
 df = pd.DataFrame(np.zeros((len(lob.index),len(col_names))),index=lob.index,columns=col_names)
 for i in range(10):
